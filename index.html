@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRacing車手表現對比</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">🏁 iRacing車手表現對比</div>
+        <div class="track-info">Spa-Francorchamps | Ferrari 296 GT3 VS Mode</div>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <section class="kpi-section">
+            <div class="kpi-card highlight-blue">
+                <h3>Driver 1 (Daniel) 最佳單圈</h3>
+                <p class="value">2'14.97  (133.97s)</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Driver 1 (Daniel) 標準差</h3>
+                <p class="value">1.48s</p>
+            </div>
+            <div class="kpi-card highlight-orange">
+                <h3>Driver 2 (Me) 最佳單圈</h3>
+                <p class="value">2'17.61 (137.61s)</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Driver 2 (Me) 標準差</h3>
+                <p class="value">2.80s</p>
+            </div>
+        </section>
+
+        <h2 class="section-title"> **Driver performance comparison </h2>
+        <section class="comparison-grid">
+            
+            <div class="chart-card">
+                <h2>速度比較(最快圈&平均圈速) </h2>
+                <img src="iRacing/Pace_comparison.png" alt="速度對比長條圖">
+                <p class="analysis-text">
+    
+                </p>
+            </div>
+
+            <div class="chart-card">
+                <h2>穩定性對比</h2>
+                <img src="iRacing/Consistency_comp.png" alt="穩定度對比盒鬚圖">
+                <p class="analysis-text">
+                </p>
+            </div>
+
+        </section>
+
+        <h2 class="section-title">車手個人單圈成績剖析 </h2>
+        <section class="split-container-grid">
+            
+            <div class="driver-column-box border-blue">
+                <div class="driver-header-label bg-blue">DRIVER 1 : DANIEL ROBERTS</div>
+                
+                <div class="chart-card">
+                    <h3>SPC X-Bar Chart管制圖</h3>
+                    <img src="iRacing/Spc_chart_Daniel.png" alt="Driver 1 SPC">
+                    
+                </div>
+
+                <div class="chart-card">
+                    <h3>Fuel level & Lap Time 散佈圖</h3>
+                    <img src="iRacing/Fuel_Pace_Daniel.png" alt="Driver 1 油量散佈圖">
+                <div class="corr-badge text-orange"> r = -0.27</div>   
+                </div>
+            </div>
+
+            <div class="driver-column-box border-orange">
+                <div class="driver-header-label bg-orange">DRIVER 2 : Me</div>
+                
+                <div class="chart-card">
+                    <h3>SPC X-Bar Chart管制圖</h3>
+                    <img src="iRacing/Spc_chart_My.png" alt="Driver 2 SPC">
+                    
+                </div>
+
+                <div class="chart-card">
+                    <h3>Fuel level & Lap Time 散佈圖</h3>
+                    <img src="iRacing/Fuel_Pace_My.png" alt="Driver 2 油量散佈圖">
+
+                <div class="corr-badge text-orange"> r = 0.595</div>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
